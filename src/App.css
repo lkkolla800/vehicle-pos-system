@@ -1,0 +1,55 @@
+/* Additional custom styles for the application */
+
+.sidebar-transition {
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Form animations */
+.form-input {
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  transform: scale(1.02);
+}
+
+/* Button effects */
+.btn-primary {
+  background: linear-gradient(45deg, #3b82f6, #1d4ed8);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, #1d4ed8, #1e40af);
+  transform: translateY(-1px);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+  .mobile-padding {
+    padding: 1rem;
+  }
+  
+  .mobile-text {
+    font-size: 0.875rem;
+  }
+}
